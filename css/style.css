@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#code {
+    float: left;
+    width: 50%;
+    color: #333;
+    font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
+    font-size: 30px;
+    padding: 100px 200px;
+    color: rgb(255,104,182);
+}
+
+@media screen and (max-width: 1024px) {
+    #code {
+        width: 70vw;
+        padding: 100px 150px;
+        height: 300px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
